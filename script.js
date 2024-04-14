@@ -1,5 +1,5 @@
 window.onload = () => {
-	animate()
+	document.body.style.backgroundColor = colourGen()
 
 	setInterval(() => {
 		animate()
