@@ -1,7 +1,8 @@
 window.onload = () => {
-	document.body.style.backgroundColor = colourGen()
+	chooseAndSetColour()
+	document.body.id = "#transition"
 
 	setInterval(() => {
-		animate()
+		chooseAndSetColour()
 	}, 5000)
 }

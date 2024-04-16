@@ -11,7 +11,3 @@ function chooseAndSetColour() {
 
 	document.body.style.backgroundColor = colours[Math.floor(Math.random() * colours.length)]
 }
-
-function animate() {
-	chooseAndSetColour()
-}
