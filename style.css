@@ -1,9 +1,3 @@
-body {
-	font-family: "Chivo Mono";
-	text-align: center;
-}
-
-
 #transition {
 	transition: background-color 3000ms linear;
 }
