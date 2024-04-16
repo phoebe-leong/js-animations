@@ -1,15 +1,17 @@
-function colourGen() {
-	const base16 = "0123456789abcdef"
-	let hexCode = "#"
+function chooseAndSetColour() {
+	const colours = [
+		"#f09ea8",
+		"#f09ea8",
+		"#fafabe",
+		"#c1edc0",
+		"#c7cafc",
+		"#cdabeb",
+		"#f2c2f2"
+	]
 
-	for (let i = 0; i < 6; i++) {
-		hexCode += base16[Math.floor(Math.random() * base16.length)]
-	}
-
-	return hexCode
+	document.body.style.backgroundColor = colours[Math.floor(Math.random() * colours.length)]
 }
 
 function animate() {
-	document.body.style.backgroundColor = colourGen()
-	document.body.id = "transition"
+	chooseAndSetColour()
 }
